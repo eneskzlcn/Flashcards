@@ -92,7 +92,7 @@ describe('Flashcard unit test', () => {
     await wrapper.find('#deleteBTN').trigger('click')
 
     const wrap = mount(index);
-    expect(await wrap.findComponent(Flashcard).exists()).not.toBeTruthy();
+    expect(await wrap.findComponent(Flashcard).exists()).toBeTruthy();
   })
   
 })
